@@ -1,11 +1,9 @@
-package productService.controller;
+package com.example.controller;
 
-import productService.model.Product;
-import productService.service.ProductService;
+import com.example.entity.Product;
+import com.example.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/products")
@@ -24,10 +22,4 @@ public class ProductController {
         System.out.println("hello");
         return productService.findProductById(productId);
     }
-
-    @GetMapping("/")
-    public List<Product> findAllProducts() {
-    System.out.println("Get all products request");
-    return productService.findAllProducts();
-}
 }

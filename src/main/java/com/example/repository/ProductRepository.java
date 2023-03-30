@@ -1,6 +1,6 @@
-package productService.repository;
+package com.example.repository;
 
-import productService.model.Product;
+import com.example.entity.Product;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
